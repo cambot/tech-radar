@@ -1,0 +1,23 @@
+[
+{
+  "pk": 1, 
+  "model": "radar.techitem", 
+  "fields": {
+    "projectUrl": "http://wordpress.org/plugins/tablepress/", 
+    "name": "TablePress", 
+    "parent": "Wordpress Plugin"
+  }
+},
+{
+  "pk": 1, 
+  "model": "radar.itemreview", 
+  "fields": {
+    "radar": "A", 
+    "grade": 9, 
+    "notes": "Importing doesn't like merged cells, cannot give tables & columns custom IDs/Classes (but can use selectors based on DB ids)", 
+    "techItem": 1, 
+    "project": "RPC", 
+    "person": "Cameron"
+  }
+}
+]
