@@ -5,6 +5,7 @@ class TechItem(models.Model):
 	name = models.CharField(max_length=100)
 	projectUrl = models.URLField()
 	parent = models.CharField(max_length=100)  # alt names: category, type, ...
+	subscriptionRequired = models.BooleanField()
 	def __unicode__(self):
 		return self.name
 
