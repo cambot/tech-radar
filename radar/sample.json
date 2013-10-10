@@ -1,12 +1,22 @@
 [
 {
   "pk": 1, 
+  "model": "radar.technology", 
+  "fields": {
+    "classType": "cms", 
+    "name": "Wordpress", 
+    "language": "php"
+  }
+},
+{
+  "pk": 1, 
   "model": "radar.techitem", 
   "fields": {
     "projectUrl": "http://wordpress.org/plugins/tablepress/", 
-    "subscriptionRequired": false, 
     "name": "TablePress", 
     "parent": "Wordpress", 
+    "subscriptionRequired": false, 
+    "technology": 1, 
     "itemType": "P"
   }
 },
@@ -15,9 +25,10 @@
   "model": "radar.techitem", 
   "fields": {
     "projectUrl": "http://www.gravityforms.com/", 
-    "subscriptionRequired": true, 
     "name": "Gravity Forms", 
     "parent": "Wordpress", 
+    "subscriptionRequired": true, 
+    "technology": 1, 
     "itemType": "P"
   }
 },
