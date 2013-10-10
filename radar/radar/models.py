@@ -56,7 +56,9 @@ class ItemReview(models.Model):
 #################
 # Admin Classes #
 #################
+class TechItemAdmin(admin.ModelAdmin):
+	list_display = ('name', 'technology', 'itemType', 'subscriptionRequired')
 
 admin.site.register(Technology)
 admin.site.register(ItemReview)
-admin.site.register(TechItem)
+admin.site.register(TechItem, TechItemAdmin)
