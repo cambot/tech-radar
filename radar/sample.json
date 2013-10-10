@@ -14,7 +14,6 @@
   "fields": {
     "projectUrl": "http://wordpress.org/plugins/tablepress/", 
     "name": "TablePress", 
-    "parent": "Wordpress", 
     "subscriptionRequired": false, 
     "technology": 1, 
     "itemType": "P"
@@ -26,7 +25,6 @@
   "fields": {
     "projectUrl": "http://www.gravityforms.com/", 
     "name": "Gravity Forms", 
-    "parent": "Wordpress", 
     "subscriptionRequired": true, 
     "technology": 1, 
     "itemType": "P"

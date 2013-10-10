@@ -30,7 +30,6 @@ ITEM_TYPES = (
 class TechItem(models.Model):
 	name = models.CharField(max_length=100)
 	projectUrl = models.URLField()
-	parent = models.CharField(max_length=100)  # alt names: category, type, ...
 	technology = models.ForeignKey('Technology')
 	subscriptionRequired = models.BooleanField()
 	itemType = models.CharField(max_length=1, choices=ITEM_TYPES)	
