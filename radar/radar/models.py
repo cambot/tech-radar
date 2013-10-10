@@ -1,11 +1,16 @@
 from django.db import models
 from django.contrib import admin
 
+ITEM_TYPES = (
+	('P', 'Plugin'),
+	('L', 'Library'),
+)
 class TechItem(models.Model):
 	name = models.CharField(max_length=100)
 	projectUrl = models.URLField()
 	parent = models.CharField(max_length=100)  # alt names: category, type, ...
 	subscriptionRequired = models.BooleanField()
+	itemType = models.CharField(max_length=1, choices=ITEM_TYPES)	
 	def __unicode__(self):
 		return self.name
 
