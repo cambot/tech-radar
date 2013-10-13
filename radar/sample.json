@@ -12,10 +12,10 @@
   "pk": 1, 
   "model": "radar.techitem", 
   "fields": {
-    "projectUrl": "http://wordpress.org/plugins/tablepress/", 
-    "name": "TablePress", 
-    "subscriptionRequired": false, 
+    "projectUrl": "http://www.gravityforms.com/", 
+    "subscriptionRequired": true, 
     "technology": 1, 
+    "name": "Gravity Forms", 
     "itemType": "P"
   }
 },
@@ -23,10 +23,10 @@
   "pk": 2, 
   "model": "radar.techitem", 
   "fields": {
-    "projectUrl": "http://www.gravityforms.com/", 
-    "name": "Gravity Forms", 
-    "subscriptionRequired": true, 
+    "projectUrl": "http://wordpress.org/plugins/tablepress/", 
+    "subscriptionRequired": false, 
     "technology": 1, 
+    "name": "TablePress", 
     "itemType": "P"
   }
 },
@@ -34,24 +34,24 @@
   "pk": 1, 
   "model": "radar.itemreview", 
   "fields": {
-    "radar": "A", 
-    "grade": 9, 
-    "notes": "Importing doesn't like merged cells, cannot give tables & columns custom IDs/Classes (but can use selectors based on DB ids)", 
+    "grade": 8, 
+    "notes": "Works for me", 
+    "userID": 1, 
     "techItem": 1, 
-    "project": "RPC", 
-    "person": "Cameron"
+    "project": "xyz", 
+    "radar": "A"
   }
 },
 {
   "pk": 2, 
   "model": "radar.itemreview", 
   "fields": {
-    "radar": "A", 
     "grade": 9, 
-    "notes": "Good ", 
+    "notes": "Wonderful", 
+    "userID": 1, 
     "techItem": 2, 
-    "project": "RPC", 
-    "person": "Cameron"
+    "project": "xyz", 
+    "radar": "A"
   }
 }
 ]

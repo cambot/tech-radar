@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.contrib import admin
 
@@ -44,14 +45,14 @@ RADAR_OPTIONS = (
 	('R', 'Reject'),
 )
 class ItemReview(models.Model):
-	person = models.CharField(max_length=100)
+	userID = models.ForeignKey(settings.AUTH_USER_MODEL)
 	techItem = models.ForeignKey('TechItem')
 	grade = models.IntegerField()
 	radar = models.CharField(max_length=1, choices=RADAR_OPTIONS)
 	notes = models.TextField(max_length=500)
 	project = models.CharField(max_length=100)
 	def __unicode__(self):
-		return "Review of " + self.techItem.name + " by " + self.person
+		return "Review of " + self.techItem.name + " by " + self.userID.username
 
 #################
 # Admin Classes #
